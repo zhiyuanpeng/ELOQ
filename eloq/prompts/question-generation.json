@@ -1,0 +1,17 @@
+{
+    "q-z-1" : {
+        "system" : [
+            "You will be provided with a document delimited by triple quotes. ",
+            "Read the document and follow user's instructions."
+        ],
+        "user_orig" : [
+            "Read the document attentively and compile a numbered list of the top {num_q} ",
+            "questions that the document directly answers. Ensure each question is clear, accurate, and devoid of confusion, false assumptions, undefined pronouns, or misinformation. Avoid referencing people, locations, organizations, or other entities not explicitly mentioned in the document. Construct each question to be thought-provoking, containing between 13 to 18 words, and sufficiently detailed to avoid being overly straightforward.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\nQuestions:"
+        ],
+        "user_conf" : [
+            "Read the document and review the list of hallucinated facts. For each hallucinated fact, craft a single, specific and concise question containing 13 to 18 words that incorporates the key element of the fact, ensuring the question is intentionally confusing. The question should not be answerable using any information present in the document. The question should not combine multiple queries and each question should address only one specific aspect. If a question cannot be formulated for a particular hallucinated fact, you may omit it.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\nhallucinated facts:\n\n{hallucinated_facts}\n\nQuestions:"
+        ]
+    }
+}

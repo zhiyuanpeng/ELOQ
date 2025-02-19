@@ -1,0 +1,28 @@
+{
+    "r-z-1" : {
+        "system" : [
+            "You will be provided with a document delimited by triple quotes. ",
+            "Read the document and follow user's instructions."
+        ],
+        "user_rag" : [
+            "Read the document and answer the question based on the document.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\nQuestion:\n\n{question}\n\nAnswer:"
+        ],
+        "user_rag_cot" : [
+            "Read the document and reason step by step to answer the question based on the document. If the question cannot be answered using the document, state explicitly that the question cannot be answered.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\nQuestion:\n\n{question}\n\nAnswer:"
+        ],
+        "user_conf_rag_example" : [
+            "Read the document and the question. Check if the question contains any confusing parts: mentions of people, locations, organizations, or other entities that are not present in the document.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\nQuestion:\n\n{question}\n\n",
+            "Does the question contain ",
+            "any confusing parts: mentions of people, locations, organizations, or other entities that are not present in the document? ",
+            "Please start by explaining your reasoning. End your response with 'The answer is: Yes or No.':"
+        ],
+        "user_def_check": [
+            "The question presented is confusing and unanswerable based on the document provided. Read the response carefully. If the response attempts to answer the question, like answering 'Yes' to agree the question or 'No' to disagree the question, you should immediately conclude with ‘The answer is: No.’ even if it later acknowledges the question’s confusion. Otherwise, determine if the response clarifies that the question cannot be answered or the response indicates that the information needed to answer the question is not available or not mentioned in the document. ",
+            "Begin with your reasoning and finally conclude with ‘The answer is: Yes.’ or ‘The answer is: No.’. Note that if the response attempts to answer the question at any point, like answering 'Yes' to agree the question or 'No' to disagree the question, you should immediately conclude with ‘The answer is: No.’ even if it later acknowledges the question’s confusion:"
+        ]
+    }
+
+}

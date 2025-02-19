@@ -1,0 +1,27 @@
+{
+    "dt-z-1" : {
+        "system" : [
+            "You will be provided with a document delimited by triple quotes. ",
+            "Read the document and follow user's instructions."
+        ],
+        "user_reduce" : [
+            "Read the document and list {num_fact} most important facts it contains. ",
+            "Each fact should be stated in a clear, standalone sentence with sufficient context to be understood independently, avoiding undefined pronouns. Ensure that each fact is directly derived from the document and does not include any information not mentioned within it.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\n{num_fact} most important facts:"
+        ],
+        "user_modify" : [
+            "Read the document below with a list of {num_fact} facts it contains. ",
+            "Note that some of the facts are missing represented by (missing). ",
+            "Your task is to guess the missing facts could have said and complete the missing facts. ",
+            "Each fact should be stated in a clear, standalone sentence with sufficient context to be understood independently, avoiding undefined pronouns. ",
+            "Please complete the missing facts and return all the {num_fact} facts in original order. You must return all the {num_fact} facts.\n\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\nCompleted list of facts:"
+        ],
+        "user_remove" : [
+            "Read the document below with a list of {num_true_fact} ground-truth facts it contains and a list of {num_false_fact} hallucinated facts that are not supported by the document. ",
+            "Your task is to remove any hallucinated facts that can be supported by either the document or the {num_true_fact} ground-truth facts. ",
+            "Please only return the remaining hallucinated facts, along with their original order numbers.\n",
+            "Document:\n\n\"\"\"{document}\"\"\"\n\n{num_true_fact} ground-truth facts:\n\n{ori_facts}\n\n{num_false_fact} hallucinated facts\n\n{hallucinated_facts}\n\nRemaining hallucinated facts:"
+        ]
+    }
+}
