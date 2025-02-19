@@ -22,4 +22,6 @@ As of now, --model can take one value from ['stella', 'linq', 'bm25', 'sbert', '
 - sbert: sentence-transformers/all-mpnet-base-v2
 - bge: BAAI/bge-large-en-v1.5
   
-The result will be printed in 2 parts: "In-scope" and "Out-of-scope", where each represent the retreival performance on each set of questions. Please look into `run.py` for how documents, queries, and qrels are loaded. 
+The result will be printed in 2 parts: "In-scope" and "Out-of-scope", where each represent the retreival performance on each set of questions. Please look into `run.py` for how documents, queries, and qrels are loaded.  <br>
+
+The code here is largely inspired by [BRIGHT](https://brightbenchmark.github.io/)

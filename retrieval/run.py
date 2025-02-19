@@ -7,7 +7,7 @@ from utils import load_documents, load_queries, load_qrels
 from retrievers import RETRIEVAL_FUNCS,calculate_retrieval_metrics
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_dir', type=str, required=True,help="Path to the root directory of the data. \"ScopeQA/data\"")
+parser.add_argument('--data_dir', type=str, required=True,help="Path to the root directory of the data. \"ELOQ/data\"")
 parser.add_argument('--model', type=str, required=True,
                     choices=['bm25','cohere','e5','google','grit','inst-l','inst-xl',
                             'openai','qwen','qwen2','sbert','sf','voyage','bge', 'stella', 'linq'])
