@@ -1,0 +1,6 @@
+{
+    "instructions": {
+      "query": "<|user|>\nGiven a question, retrieve relevant news article that help answer the question\n<|embed|>\n",
+      "document": "<|embed|>\n"
+    }
+}

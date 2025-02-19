@@ -1,0 +1,5 @@
+{
+    "instructions": {
+        "query": "Given a question, retrieve news that answer the question"
+    }
+}
