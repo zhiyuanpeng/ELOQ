@@ -242,7 +242,7 @@ def show_question_contents_and_annotation_form(qrc_data, doc_id, csv_path, annot
             if not st.session_state[form1_submitted_key]:
                 # Form 1: 
                 with st.form(key=f'form1_{index}'):
-                    human_confuse_label_options = ["Did not select", "Yes", "No"]
+                    human_confuse_label_options = ["Did not select", "Yes (Question is out-of-scope)", "No (Question is in-scope)"]
                     human_confuse_label = st.radio(
                         "Can this question be answered using the document? (Please select Yes or No)",
                         human_confuse_label_options,
@@ -274,7 +274,7 @@ def show_question_contents_and_annotation_form(qrc_data, doc_id, csv_path, annot
                 st.text_area("Response:", value=row['response'], key=f"response_{index}")
                 # Form 2: Additional annotations
                 with st.form(key=f'form2_{index}', clear_on_submit=True):
-                    st.write("Since you think the question cannot be answered:")
+                    st.write("Since you think the question is out-of-scope:")
                     human_defuse_label_options = ["Did not select", "Yes", "No"]
                     human_defuse_label = st.radio(
                         "Did the LLM's response defuse the confusion?",
