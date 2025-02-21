@@ -117,7 +117,9 @@ def check_and_create_annotations_csv(csv_path):
             if st.session_state.create_csv_choice == 'Yes':
                 # Create the DataFrame with the specified columns
                 columns = [
-                    'doc_id', 'q_id', 'human_confuse_label', 'human_defuse_label']
+                    'doc_id', 'q_id', 'supposed_to_be_confusing', 'llm_confuse_label', 
+                    'human_confuse_label', 'human_defuse_label'
+                ]
                 annotations_df = pd.DataFrame(columns=columns)
                 # Save the DataFrame as a CSV file
                 annotations_df.to_csv(csv_path, index=False)
@@ -258,6 +260,7 @@ def show_question_contents_and_annotation_form(qrc_data, doc_id, csv_path, annot
                                     'doc_id': doc_id,
                                     'q_id': q_id,
                                     'supposed_to_be_confusing': supposed_to_be_confusing,
+                                    'llm_confuse_label': llm_confuse_label,
                                     'human_confuse_label': human_confuse_label,
                                     'human_defuse_label': "Did not select",
                                 }
