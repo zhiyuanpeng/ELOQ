@@ -5,8 +5,7 @@
 </div>
 
 ## Description
-ELOQ is framework to generate out-of-scope questions for given corpus.
-
+ELOQ is framework to generate out-of-scope questions for given corpus. You can go through some examples via [ELOQ-Data-Viewer0](https://huggingface.co/spaces/zhiyuanpeng/ELOQ-Data-Viewer)
 ## Installation
 ### Environment
 ```
