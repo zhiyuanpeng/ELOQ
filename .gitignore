@@ -176,5 +176,6 @@ cython_debug/
 /data
 eloq/src/releasing
 eloq/src/metrics
-eloq/src/apps
 .vscode/
+view/
+.DS_Store
