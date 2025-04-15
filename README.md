@@ -2,6 +2,14 @@
 
 # ELOQ
 
+[![Paper](https://img.shields.io/badge/paper-arxiv.2410.14567-B31B1B.svg
+)](https://arxiv.org/pdf/2410.14567)
+[![Conference](https://img.shields.io/badge/SIGIR-2025-B31B1B.svg?labelColor=%23FFEB3B&color=%231976D2
+)](https://sigir2025.dei.unipd.it/)
+[![Dataset](https://img.shields.io/badge/Huggingface-Datasets-B31B1B.svg?labelColor=%23FFD21E&color=%23FFD21E
+)](https://huggingface.co/datasets/zhiyuanpeng/ELOQ)
+
+
 </div>
 
 ## Description
