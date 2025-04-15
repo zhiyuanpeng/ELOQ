@@ -151,3 +151,16 @@ python -m eloq.src.llm_response
 ```python
 python -m eloq.src.llm_defuse
 ```
+
+## Citation
+```
+@misc{peng2025eloqresourcesenhancingllm,
+      title={ELOQ: Resources for Enhancing LLM Detection of Out-of-Scope Questions}, 
+      author={Zhiyuan Peng and Jinming Nian and Alexandre Evfimievski and Yi Fang},
+      year={2025},
+      eprint={2410.14567},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.14567}, 
+}
+```
