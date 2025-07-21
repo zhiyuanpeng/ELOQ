@@ -154,13 +154,28 @@ python -m eloq.src.llm_defuse
 
 ## Citation
 ```
-@misc{peng2025eloqresourcesenhancingllm,
-      title={ELOQ: Resources for Enhancing LLM Detection of Out-of-Scope Questions}, 
-      author={Zhiyuan Peng and Jinming Nian and Alexandre Evfimievski and Yi Fang},
-      year={2025},
-      eprint={2410.14567},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2410.14567}, 
+@inproceedings{DBLP:conf/sigir/0001NE025,
+  author       = {Zhiyuan Peng and
+                  Jinming Nian and
+                  Alexandre V. Evfimievski and
+                  Yi Fang},
+  editor       = {Nicola Ferro and
+                  Maria Maistro and
+                  Gabriella Pasi and
+                  Omar Alonso and
+                  Andrew Trotman and
+                  Suzan Verberne},
+  title        = {{ELOQ:} Resources for Enhancing {LLM} Detection of Out-of-Scope Questions},
+  booktitle    = {Proceedings of the 48th International {ACM} {SIGIR} Conference on
+                  Research and Development in Information Retrieval, {SIGIR} 2025, Padua,
+                  Italy, July 13-18, 2025},
+  pages        = {3509--3519},
+  publisher    = {{ACM}},
+  year         = {2025},
+  url          = {https://doi.org/10.1145/3726302.3730333},
+  doi          = {10.1145/3726302.3730333},
+  timestamp    = {Tue, 15 Jul 2025 16:48:28 +0200},
+  biburl       = {https://dblp.org/rec/conf/sigir/0001NE025.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
